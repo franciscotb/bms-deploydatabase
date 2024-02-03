@@ -1,0 +1,5 @@
+sh create_database.sh central_config
+sudo su - postgres
+psql -d central_config -U postgres
+\i /home/franciscotb/Documents/git/bms-deploydatabase/central_config.sql
+\i /home/franciscotb/Documents/git/bms-deploydatabase/load_central_config.sql
