@@ -78,7 +78,7 @@ INSERT INTO administration.license(
     nextval('license_key_seq'),
     MD5('BMS Sistemas'),
     now(),
-    null,
+    now() + INTERVAL '30 DAYS',
     100.00,
     1,
     1
