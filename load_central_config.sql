@@ -66,6 +66,24 @@ INSERT INTO administration.site(
     1
 );
 
+INSERT INTO administration.license(
+    license_key,
+    license_number,
+    creation_date,
+    expire_date,
+    cost,
+    site_key,
+    profile_key
+) values (
+    nextval('license_key_seq'),
+    MD5('BMS Sistemas'),
+    now(),
+    null,
+    100.00,
+    1,
+    1
+);
+
 INSERT INTO administration.user(
     user_key,
     login,
