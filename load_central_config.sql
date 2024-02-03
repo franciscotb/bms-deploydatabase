@@ -9,6 +9,6 @@ INSERT INTO administration.profile(
     'main',
     '500',
     '9999999',
-    'Global Acess'
+    'Global Access'
 );
 
