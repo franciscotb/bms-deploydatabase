@@ -22,6 +22,7 @@ CREATE TABLE administration.user (
     phone2 text,
     status text DEFAULT 'ACTIVE'::text,
     type text,
+    number_of_users int,
     creation_date timestamp with time zone,
     parent_user_key bigint
 );
@@ -38,6 +39,7 @@ CREATE TABLE administration.user_details (
     timezone text,
     document text,
     social_media text,
+    a1 text,
     logo bytea,
     user_key bigint NOT NULL
 );
